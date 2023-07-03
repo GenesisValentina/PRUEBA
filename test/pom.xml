@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.1</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>prueba.test</groupId>
+	<artifactId>test</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>test</name>
+	<description>prueba bci</description>
+	<properties>
+		<java.version>8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot:spring-boot-starter-web</groupId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot:spring-boot-starter-data-jpa</groupId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database:h2</groupId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate:hibernate-core</groupId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.persistence:eclipselink</groupId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+	</dependencies>
+	
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>springframework-boot</artifactId>
+				<version>2.5.4</version>
+			</plugin>
+		</plugins>
+	</build>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>io.spring.dependency-management</groupId>
+				<artifactId>springframework-boot</artifactId>
+				<version>1.0.11.RELEASE</version>
+			</plugin>
+			<plugin>
+				<groupId>java</groupId>
+				<artifactId>java</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+<!-- dependencies {
+
+
+    // Otras dependencias necesarias, como JWT
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+} -->
+
+</project>
